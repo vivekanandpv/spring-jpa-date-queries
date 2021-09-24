@@ -48,7 +48,7 @@ public class ProductController {
         }
     }
 
-    @GetMapping("first-after-timestamp-jpql")
+    @GetMapping("first-after-timestamp-sql")
     public ResponseEntity<Product> getFirstAfterJpql(@RequestParam String begin) {
         try {
             LocalDateTime timestamp = LocalDateTime.parse(begin, DateTimeFormatter.ISO_DATE_TIME);
